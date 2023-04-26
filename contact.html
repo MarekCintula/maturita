@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./contact.css">
+    <script src="contact.js"></script>
+</head>
+<body>
+    <div class="bg">
+        <a href="./index.html" class="back-button">⥢</a>
+
+
+        <form onsubmit="submitForm(); return false" class="form">
+            <h1>Kontakntý formulár</h1>
+            <div style="display:flex;">
+                <input id="form-name" placeholder="Meno.." class="w-half" type="text">
+                <input id="form-surname" placeholder="Priezvisko.." class="w-half" type="text">
+            </div>
+            <input id="form-email" placeholder="Email.." class="w-full" style="display: block;" type="email">
+            <textarea id="form-text" placeholder="Text.." class="w-full" ></textarea>
+            <p id="error-message"></p>
+
+            <button id="form-submit" type="submit">Odoslať</button>
+        </form>
+    </div>
+</body>
+</html>

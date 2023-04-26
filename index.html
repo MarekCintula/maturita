@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ACEDesign</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+ 
+
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+	<script src="./script.js"></script>
+
+
+</head>
+<body id="body">
+	
+
+	<div id="domov" class="hero">
+		<nav id="nav">
+			
+			
+			<ul>
+				<li><a href="#domov">Domov</a></li>
+				<li><a href="#onas">O nás</a></li>
+				<li><a href="#sluzby">Služby</a></li>
+				<li><a href="#">Zručnosti</a></li>
+				<li><a href="#galeria">Galéria</a></li>
+			</ul>
+			<a href="./contact.html" class="btn">Kontaktuje nás</a> 
+		</nav>
+
+		<div class="content">
+			<div class="content-bg"></div>
+			<h1>ACE Design<span> s.r.o.</span></h1>
+			<h5>Architektúrska a dizajnová <span>Firma</span></h5>3>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!----About section start---->
+	<section id="onas" class="about">
+		<div class="main">
+			<img src="firma.jpg">
+			<div class="about-text">
+				<h2>O nás</h2>
+			
+				<p>Sme profesionálni architekti a dizajnéri pre interiér a exteriér sídliaci v Bratislave.
+					Náš skúsený tím je pripravený Vám pomôcť s návrhom či vizualizáciou vášho projektu alebo domácnosti.
+					Disponujeme flexibilným realizačným tímom, ktorý je školený na rôzne druhy dizajnu ktoré ponúkame.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<!-----service section start----------->
+	<div id="sluzby" class="service">
+		<div class="title">
+		<h2>Naše služby</h2>	
+		</div>
+
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Návrh interiéru</h5>
+				<div class="pra">
+					<p>S našimi špičkovými architektmi a bohatými skúsenosťami vám poskytneme návrh a realizáciu moderného a inovatívneho interiéru pre vašu domácnosť.<a id="exterier-viac" style="display: none;"> Kontaktujte nás dnes a my sa postaráme o vaše pohodlie.</a></p>
+
+					<p style="text-align: center;">
+						<a id="exterier" class="button" onclick="showExterier()">Viac</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5> Návrh exteriéru</h5>
+				<div class="pra">
+					<p>Ponúkame vám moderné riešenia vašich vonkajších priestorov ako napríklad záhrady, terasy, garáže, ktoré sú neodmyslitelnou časťou vášho pozemku. <a id="interier-viac" style="display: none;">Kontaktujte nás dnes a my sa postaráme o vaše pohodlie</a></p>
+
+					<p style="text-align: center;">
+						<a id="interier" class="button" onclick="showInterier()">Viac</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- gallery section start -->
+	<div id="galeria" class="gallery-section">
+		<h1>Galéria</h1>
+		<div class="gallery">
+			<img onclick="openImage(this)" name="gallery-1" class="gallery-img" src="./img/1.jpg">
+			<img onclick="openImage(this)" name="gallery-2" class="gallery-img" src="./img/2.jpg">
+			<img onclick="openImage(this)" name="gallery-3" class="gallery-img" src="./img/3.jpg">
+			<img onclick="openImage(this)" name="gallery-4" class="gallery-img" src="./img/4.jpg">
+			<img onclick="openImage(this)" name="gallery-5" class="gallery-img" src="./img/5.jpg">
+			<img onclick="openImage(this)" name="gallery-6" class="gallery-img" src="./img/6.jpg">
+			<img onclick="openImage(this)" name="gallery-7" class="gallery-img" src="./img/7.jpg">
+			<img onclick="openImage(this)" name="gallery-8" class="gallery-img" src="./img/8.jpg">
+			<img onclick="openImage(this)" name="gallery-9" class="gallery-img" src="./img/9.jpg">
+			<img onclick="openImage(this)" name="gallery-10" class="gallery-img" src="./img/10.jpg">
+			<img onclick="openImage(this)" name="gallery-11" class="gallery-img" src="./img/11.jpg">
+		</div>
+
+		<div id="preview" class="photo-preview">
+			<div onclick="closeSelectedPicture()" class="close">X</div>
+			<img id="image" src="" alt="">
+		</div>
+	</div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	<!------footer start--------->
+	<footer>
+		<div class="links">
+			<a href="https://goo.gl/maps/84Kh2d7JaUorKfzp7" target="_blank" class="link">Panónska cesta 33, 851 04 Petržalka</a>
+			<a href="mailto:info@acedesign.com" target="_blank" class="link">info@acedesign.com</a>
+		</div>
+		<div class="social">
+			<a href="https://www.facebook.com/profile.php?id=100090307673759" target="_blank" ><i class="fab fa-facebook"></i></a>
+			<a href="https://www.instagram.com/acedesignoff/" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://twitter.com/acedesignoff" target="_blank"><i class="fab fa-twitter"></i></a>
+		</div>
+		<div class="news-letter">
+			<div>
+				<p>Pre odoberanie noviniek zadajte email.</p>
+			</div>
+			<form>
+				<input oninput="isValidEmail()" id="news-email" class="isValid" required placeholder="Zadajte email" type="email">
+				<button type="submit" onclick="sendNewsLetter(); return false">Odoberať</button>
+			</form>
+		</div>
+	</footer>
+</body>
+</html>
